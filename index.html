@@ -4,24 +4,65 @@
 <head>
     <title>My page</title>
     <style>
-        img {
-            width: 400px;
-            height: 300px;
+        .title{
+            font-size: xxx-large;
+            text-align: center; /* 置中 */
         }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 1.5rem;
+        }
+        .gallery_img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        img {
+            width: 240px;
+            height: 180px;
+        }
+    
     </style>
 </head>
 
 <body>
-    <img src="./imgs/amaeru.jpg">
-    <img src="./imgs/speak clear.jpg">
-    <img src="./imgs/lets talk.jpg">
-    <img src="./imgs/subarashi.jpg">
-    <img src="./imgs/jinsei.jpg">
-    <img src="./imgs/on hight.jpg">
-    <img src="./imgs/issyo.jpg">
-    <img src="./imgs/selffihsh.jpg">
-    <img src="./imgs/unmei.jpg">
-    <img src="./imgs/good smell.jpg">
+    <h1 class="title">mygo!!!!! meme</h1>
+    <div class="wrapper">
+        <figure class="gallery_img">
+            <img src="./imgs/amaeru.jpg">
+        </figure>
+        <figure class="gallery_img">
+            <img src="./imgs/speak clear.jpg">
+        </figure>
+        <figure class="gallery_img">
+            <img src="./imgs/lets talk.jpg">
+        </figure>
+        <figure class="gallery_img">
+            <img src="./imgs/subarashi.jpg">
+        </figure>
+        <figure class="gallery_img">
+            <img src="./imgs/jinsei.jpg">
+        </figure>
+        <figure class="gallery_img">
+            <img src="./imgs/on hight.jpg">
+        </figure>
+        <figure class="gallery_img">
+            <img src="./imgs/issyo.jpg">
+        </figure>
+        <figure class="gallery_img">
+            <img src="./imgs/selffihsh.jpg">
+        </figure>
+        <figure class="gallery_img">
+            <img src="./imgs/unmei.jpg">
+        </figure>
+        <figure class="gallery_img">
+            <img src="./imgs/good smell.jpg">
+        </figure>
+    </div>
+
 </body>
 
 </html>
